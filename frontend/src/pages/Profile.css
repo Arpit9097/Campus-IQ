@@ -1,0 +1,215 @@
+/* Profile Page Styles */
+
+.profile-page {
+    min-height: 100vh;
+    background-color: var(--bg-dark);
+    font-family: var(--font-family);
+}
+
+.profile-header {
+    height: 12rem;
+    background: linear-gradient(to right, var(--primary), var(--primary-hover));
+    position: relative;
+}
+
+.profile-save-btn-container {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.profile-save-btn {
+    background: white;
+    color: var(--primary);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar-container {
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: rgba(224, 231, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--bg-dark);
+    font-size: 2.25rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.profile-tagline-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    text-align: center;
+    width: 100%;
+    margin-top: 0.25rem;
+    color: var(--text-secondary);
+}
+
+.profile-tagline-input:focus {
+    border-color: var(--primary);
+}
+
+.profile-social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: -6rem auto 3rem;
+    padding: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+    .profile-grid {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.profile-section {
+    background: var(--bg-card);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-header {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-header-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.section-header-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.info-input {
+    padding: 0.25rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 0;
+}
+
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    padding: 0.25rem 0.75rem;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--text-primary);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.skill-input {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.skill-add-btn {
+    padding: 0.4rem;
+}
+
+.education-item {
+    position: relative;
+    padding-left: 1.5rem;
+    border-left: 2px solid var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.edu-school {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--text-primary);
+}
+
+.edu-details {
+    color: var(--text-secondary);
+}
+
+.edu-date {
+    color: var(--primary);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.project-card {
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    position: relative;
+    transition: var(--transition);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.project-card:hover {
+    border-color: var(--primary);
+}
+
+.add-form-container {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-color);
+}
+
+.add-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.add-btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}

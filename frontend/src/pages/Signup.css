@@ -1,0 +1,78 @@
+/* Signup Page Styles */
+.signup-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.signup-card {
+    width: 100%;
+    max-width: 500px;
+    /* Slightly wider than login for more content */
+    padding: 2.5rem;
+}
+.signup-header-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.signup-header-subtitle {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.alert-success {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--success);
+  background: rgba(34, 197, 94, 0.1);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.alert-danger {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--danger);
+  background: rgba(239, 68, 68, 0.1);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.password-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.password-input {
+  padding-right: 2.5rem;
+}
+
+.input-toggle-btn {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.signup-footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+}
+
